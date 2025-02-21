@@ -28,57 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonCorregirExamen = new System.Windows.Forms.Button();
+            this.buttonGenerarExamen = new System.Windows.Forms.Button();
+            this.buttonPreguntas = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonCorregirExamen
             // 
-            this.button1.Location = new System.Drawing.Point(100, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCorregirExamen.Location = new System.Drawing.Point(261, 295);
+            this.buttonCorregirExamen.Name = "buttonCorregirExamen";
+            this.buttonCorregirExamen.Size = new System.Drawing.Size(204, 32);
+            this.buttonCorregirExamen.TabIndex = 0;
+            this.buttonCorregirExamen.Text = "Corregir Examen";
+            this.buttonCorregirExamen.UseVisualStyleBackColor = true;
+            this.buttonCorregirExamen.Click += new System.EventHandler(this.buttonCorregirExamen_Click);
             // 
-            // button2
+            // buttonGenerarExamen
             // 
-            this.button2.Location = new System.Drawing.Point(100, 186);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonGenerarExamen.Location = new System.Drawing.Point(261, 230);
+            this.buttonGenerarExamen.Name = "buttonGenerarExamen";
+            this.buttonGenerarExamen.Size = new System.Drawing.Size(204, 32);
+            this.buttonGenerarExamen.TabIndex = 1;
+            this.buttonGenerarExamen.Text = "Generar Examen";
+            this.buttonGenerarExamen.UseVisualStyleBackColor = true;
+            this.buttonGenerarExamen.Click += new System.EventHandler(this.buttonGenerarExamen_Click);
             // 
-            // button3
+            // buttonPreguntas
             // 
-            this.button3.Location = new System.Drawing.Point(100, 241);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonPreguntas.Location = new System.Drawing.Point(261, 167);
+            this.buttonPreguntas.Name = "buttonPreguntas";
+            this.buttonPreguntas.Size = new System.Drawing.Size(204, 32);
+            this.buttonPreguntas.TabIndex = 2;
+            this.buttonPreguntas.Text = "Crear Preguntas";
+            this.buttonPreguntas.UseVisualStyleBackColor = true;
+            this.buttonPreguntas.Click += new System.EventHandler(this.buttonPreguntas_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(277, 110);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Bienvenido al Sistema de Gestión";
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonPreguntas);
+            this.Controls.Add(this.buttonGenerarExamen);
+            this.Controls.Add(this.buttonCorregirExamen);
             this.Name = "FormMenu";
             this.Text = "FormMenu";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonCorregirExamen;
+        private System.Windows.Forms.Button buttonGenerarExamen;
+        private System.Windows.Forms.Button buttonPreguntas;
+        private System.Windows.Forms.Label label1;
     }
 }

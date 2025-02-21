@@ -17,9 +17,23 @@ namespace SistemaGestionExamenes
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonPreguntas_Click(object sender, EventArgs e)
         {
 
+            FormPreguntas form = new FormPreguntas();
+            form.ShowDialog();
+        }
+
+        private void buttonGenerarExamen_Click(object sender, EventArgs e)
+        {
+            FormPreguntas form = new FormPreguntas();
+            form.ShowDialog();
+        }
+
+        private void buttonCorregirExamen_Click(object sender, EventArgs e)
+        {
+            FormPreguntas form = new FormPreguntas();
+            form.ShowDialog();
         }
     }
 }
