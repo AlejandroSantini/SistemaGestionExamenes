@@ -43,6 +43,10 @@
             this.labelSeleccionarRespuesta = new System.Windows.Forms.Label();
             this.labelSeleccioneAsignatura = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.textBoxSubunidad = new System.Windows.Forms.TextBox();
+            this.textBoxUnidad = new System.Windows.Forms.TextBox();
+            this.subunidad = new System.Windows.Forms.Label();
+            this.unidad = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ingresarPregunta
@@ -169,11 +173,47 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // textBoxSubunidad
+            // 
+            this.textBoxSubunidad.Location = new System.Drawing.Point(146, 242);
+            this.textBoxSubunidad.Name = "textBoxSubunidad";
+            this.textBoxSubunidad.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSubunidad.TabIndex = 18;
+            // 
+            // textBoxUnidad
+            // 
+            this.textBoxUnidad.Location = new System.Drawing.Point(25, 242);
+            this.textBoxUnidad.Name = "textBoxUnidad";
+            this.textBoxUnidad.Size = new System.Drawing.Size(100, 20);
+            this.textBoxUnidad.TabIndex = 17;
+            // 
+            // subunidad
+            // 
+            this.subunidad.AutoSize = true;
+            this.subunidad.Location = new System.Drawing.Point(143, 226);
+            this.subunidad.Name = "subunidad";
+            this.subunidad.Size = new System.Drawing.Size(61, 13);
+            this.subunidad.TabIndex = 16;
+            this.subunidad.Text = "Subunidad:";
+            // 
+            // unidad
+            // 
+            this.unidad.AutoSize = true;
+            this.unidad.Location = new System.Drawing.Point(22, 226);
+            this.unidad.Name = "unidad";
+            this.unidad.Size = new System.Drawing.Size(44, 13);
+            this.unidad.TabIndex = 15;
+            this.unidad.Text = "Unidad:";
+            // 
             // FormPreguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxSubunidad);
+            this.Controls.Add(this.textBoxUnidad);
+            this.Controls.Add(this.subunidad);
+            this.Controls.Add(this.unidad);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.labelSeleccioneAsignatura);
             this.Controls.Add(this.labelSeleccionarRespuesta);
@@ -213,6 +253,10 @@
         private System.Windows.Forms.Label labelSeleccionarRespuesta;
         private System.Windows.Forms.Label labelSeleccioneAsignatura;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.TextBox textBoxSubunidad;
+        private System.Windows.Forms.TextBox textBoxUnidad;
+        private System.Windows.Forms.Label subunidad;
+        private System.Windows.Forms.Label unidad;
     }
 }
 

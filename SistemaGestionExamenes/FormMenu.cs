@@ -26,13 +26,13 @@ namespace SistemaGestionExamenes
 
         private void buttonGenerarExamen_Click(object sender, EventArgs e)
         {
-            FormPreguntas form = new FormPreguntas();
+            FormGenerarExamen form = new FormGenerarExamen();
             form.ShowDialog();
         }
 
         private void buttonCorregirExamen_Click(object sender, EventArgs e)
         {
-            FormPreguntas form = new FormPreguntas();
+            FormCorrecionExamen form = new FormCorrecionExamen();
             form.ShowDialog();
         }
     }
